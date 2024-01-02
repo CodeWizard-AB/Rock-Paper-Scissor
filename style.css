@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 0.5px;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: #f8f0fc;
+}
+
+.container {
+	aspect-ratio: 1;
+	padding: 7.5rem 15rem;
+	border-radius: 1.5rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.155);
+	background-color: #f3f0ff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+}
+
+.common-flex {
+	display: flex;
+	gap: 15rem;
+	place-items: center;
+}
+
+.game-point {
+	font-size: 3rem;
+	color: #7d2ae8;
+	font-weight: 600;
+}
+
+.container-images .rock {
+	width: 130px;
+	display: block;
+}
+
+.rock-computer {
+	transform: rotate(90deg);
+}
+
+.rock-user {
+	transform: rotate(-90deg) scaleX(-1);
+}
+
+.game-title {
+	font-size: 3.2rem;
+	font-weight: 600;
+	text-align: center;
+	color: #7d2ae8;
+}
+
+.game-choices {
+	display: flex;
+	place-content: center;
+	gap: 10rem;
+}
+
+.choice-title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: #7d2ae8;
+}
+
+.option {
+	width: 50px;
+	display: block;
+}
+
+.choice {
+	cursor: pointer;
+	opacity: 0.5;
+	transition: all 0.2s linear;
+	display: grid;
+	place-items: center;
+	gap: 1rem;
+}
+
+.choice:hover {
+	opacity: 1;
+}
+
+.choice-active {
+	opacity: 1;
+}
+
+.start .left-rock {
+	transform-origin: left;
+	animation: left-hand 0.7s ease infinite;
+}
+
+@keyframes left-hand {
+	50% {
+		transform: rotate(10deg);
+	}
+}
+
+.start .right-rock {
+	transform-origin: right;
+	animation: right-hand 0.7s ease infinite;
+}
+
+@keyframes right-hand {
+	50% {
+		transform: rotate(-10deg);
+	}
+}
+
+.btn {
+	padding: 1.3rem 2.3rem;
+	align-self: center;
+	border: none;
+	background-color: #7d2ae8;
+	font-size: 2.4rem;
+	font-weight: 600;
+	color: #f6f7fb;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 0.5rem;
+}
+
+.btn:hover {
+	background-color: #6422ba;
+}
+
+.btn:active {
+	transform: translateY(6px);
+}
+
+.game-counting {
+	background-color: #7d2ae8;
+	color: #fff;
+	width: 60px;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+}
+
+.pointer-event {
+	pointer-events: none;
+}
+
+

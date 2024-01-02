@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Rock Paper Scissor Game (JS)</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="./images/js-icon.png" type="image/x-icon" />
+	</head>
+	<body>
+		<section class="container">
+			<div class="game-counter common-flex">
+				<p class="game-point">
+					Computer: <span class="computer-score">0</span>
+				</p>
+				<p class="game-point">User: <span class="user-score">0</span></p>
+			</div>
+			<div class="container-images common-flex">
+				<div class="left-rock">
+					<img src="./images/rock.png" alt="Rock" class="rock rock-computer" />
+				</div>
+				<div class="right-rock">
+					<img src="./images/rock.png" alt="Rock" class="rock rock-user" />
+				</div>
+			</div>
+			<h2 class="game-title">Let's Play!!</h2>
+			<div class="game-choices">
+				<div class="choice">
+					<img
+						src="./images/rock.png"
+						alt="Rock-hand"
+						id="rock"
+						class="option"
+					/>
+					<h3 class="choice-title">Rock</h3>
+				</div>
+				<div class="choice">
+					<img
+						src="./images/paper.png"
+						alt="Paper-hand"
+						id="paper"
+						class="option"
+					/>
+					<h3 class="choice-title">Paper</h3>
+				</div>
+				<div class="choice">
+					<img
+						src="./images/scissors.png"
+						alt="Scissor-hand"
+						id="scissors"
+						class="option"
+					/>
+					<h3 class="choice-title">Scissior</h3>
+				</div>
+			</div>
+			<button class="btn">Play Again</button>
+			
+		</section>
+		<script defer src="script.js"></script>
+	</body>
+</html>
